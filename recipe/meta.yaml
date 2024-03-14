@@ -40,6 +40,10 @@ test:
   commands:
     - pip check
     - validate-patterns --help
+  requires:
+    - coverage
+    - pytest
+    - pytest-cov
 
 about:
   home: "https://github.com/oasis-open/cti-pattern-validator"
@@ -47,8 +51,8 @@ about:
   license_family: BSD
   license_file: 
   summary: "Validate STIX 2 Patterns."
-  doc_url: 
-  dev_url: 
+  doc_url: https://stix2-patterns.readthedocs.io/en/latest/
+  dev_url: https://github.com/oasis-open/cti-pattern-validator
 
 extra:
   recipe-maintainers:
