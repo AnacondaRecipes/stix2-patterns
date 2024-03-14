@@ -44,7 +44,8 @@ test:
     - pytest-cov
   commands:
     - pip check
-    - validate-patterns --help
+    - validate-patterns --help # [not win]
+    - pytest -v --pyargs stix2patterns
 
 about:
   home: "https://github.com/oasis-open/cti-pattern-validator"
