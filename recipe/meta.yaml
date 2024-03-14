@@ -37,13 +37,14 @@ test:
     - stix2patterns.v20.grammars
     - stix2patterns.v21
     - stix2patterns.v21.grammars
-  commands:
-    - pip check
-    - validate-patterns --help
   requires:
+    - pip
     - coverage
     - pytest
     - pytest-cov
+  commands:
+    - pip check
+    - validate-patterns --help
 
 about:
   home: "https://github.com/oasis-open/cti-pattern-validator"
