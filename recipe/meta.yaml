@@ -50,7 +50,7 @@ test:
 
 about:
   home: "https://github.com/oasis-open/cti-pattern-validator"
-  license: BSD
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: "Validate STIX 2 Patterns."
