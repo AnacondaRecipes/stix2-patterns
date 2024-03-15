@@ -11,19 +11,20 @@ source:
 
 build:
   number: 0
+  skip: true  # [py>311]
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
 
 requirements:
   host:
     - antlr4-python3-runtime ~=4.9.0
     - pip
-    - python >=3.8
+    - python
     - six
     - wheel
     - setuptools
   run:
     - antlr4-python3-runtime ~=4.9.0
-    - python >=3.8
+    - python
     - six
 
 test:
@@ -51,11 +52,13 @@ about:
   home: "https://github.com/oasis-open/cti-pattern-validator"
   license: BSD
   license_family: BSD
-  license_file: 
+  license_file: LICENSE
   summary: "Validate STIX 2 Patterns."
   doc_url: https://stix2-patterns.readthedocs.io/en/latest/
   dev_url: https://github.com/oasis-open/cti-pattern-validator
+  description: |
+  OASIS TC Open Repository: Validate patterns used to express cyber observable content in STIX Indicators
 
 extra:
   recipe-maintainers:
-    - your-github-id-here
+
