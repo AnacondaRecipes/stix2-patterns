@@ -55,7 +55,7 @@ about:
   doc_url: https://stix2-patterns.readthedocs.io/en/latest/
   dev_url: https://github.com/oasis-open/cti-pattern-validator
   description: |
-  OASIS TC Open Repository: Validate patterns used to express cyber observable content in STIX Indicators
+     OASIS TC Open Repository: Validate patterns used to express cyber observable content in STIX Indicators
 
 extra:
   recipe-maintainers:
