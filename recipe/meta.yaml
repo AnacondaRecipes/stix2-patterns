@@ -40,9 +40,7 @@ test:
     - stix2patterns.v21.grammars
   requires:
     - pip
-    - coverage
     - pytest
-    - pytest-cov
   commands:
     - pip check
     - validate-patterns --help # [not win]
